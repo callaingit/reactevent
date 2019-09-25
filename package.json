@@ -1,0 +1,21 @@
+{
+  "name": "reactproject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "test.js",
+  "dependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-jsx": "npx babel -w -D -d ./public/lib -x .jsx --verbose --delete-dir-on-start ./src",
+    "compile-jsx-once": "npx babel -D -d ./public/lib -x .jsx --verbose --delete-dir-on-start ./src",
+    "start": "node expressapp.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
